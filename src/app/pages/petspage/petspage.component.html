@@ -1,0 +1,37 @@
+<div class="container mt-5 mb-5">
+    <div class="row">
+        <div class="col-lg-6" *ngIf="petData">
+            <img src="{{petData[0].petImg}}" width="50%"/>
+            <p>{{petData[0].BreedType}} 
+             {{petData[0].petName}}<br>
+            {{petData[0].petPrice|currency:'INR'}} </p> 
+        </div>
+        <div class="col-lg-6">
+            <h4> Enter your Details </h4><br>
+            <!-- <form>
+                <input type="text" id="name" placeholder="Enter your Fullname" ><br><br>
+                <input type="text" id="mobile" placeholder="Contact Number" ><br><br>
+                <input type="textarea" id="address" placeholder="Your Address"> <br><br>
+                <a routerLink="../../pets" class="btn btn-dark"> Back </a> &nbsp; 
+                <button class="btn btn-md btn-dark mt-3"> Place Order </button> 
+            </form> -->
+
+            <form [formGroup]="petsform" (ngSubmit)="saveReactive()">
+                <div class="row">
+                    <div class=" mt-2 mb-2">
+                <input type="text" name="name" placeholder="Enter your name" formControlName="name">
+                <span *ngIf="name?.touched && name?.invalid"> Name is required </span>
+            </div>
+            <div class=" mt-2 mb-2">
+                <input type="text" name="Mobile" placeholder="Enter your Mobile Number" formControlName="mobile">
+                <span *ngIf="mobile?.touched && mobile?.invalid"> Mobile is required </span>
+            </div>
+            <div class="mt-2 mb-2">
+                <input type="textarea" name="address" placeholder="Enter your address" formControlName="address">
+                <span *ngIf="address?.touched && address?.invalid"> Address is required </span>
+            </div><br>
+                <div>
+                    <input class="submit" type="submit" value="Submit">    </div>
+        </div>
+   </form>
+</div>

@@ -1,0 +1,42 @@
+<div class="banner">
+    <div class="content">
+    <h4 class="mb-4"> Warning: Cuteness Overload</h4>
+    <button routerLink="pets"> Adopt a new family </button>
+</div>
+</div>
+<div class="container mt-5 mb-5">
+    <h3 class="container mb-4"> <span style="color: var(--primary-color);"> How to get one?</span></h3>
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="stepbox">
+            <h3> 1</h3>
+            <p> Select your favourite</p>
+        </div></div>
+        <div class="col-lg-4">
+            <div class="stepbox">
+            <h3> 2 </h3>
+            <p> Fill the details</p>
+        </div></div>
+        <div class="col-lg-4">
+            <div class="stepbox">
+            <h3> 3</h3>
+            <p>Get your companion</p>
+        </div></div>
+    </div>
+</div>
+
+<!-- petbox -->
+<div class="cointainer mt-4 mb-4">
+    <h3 class="container mb-4"> <span style="color: var(--primary-color);"> Best-sellers </span></h3>
+    <div class="row">
+        <div class="col-lg-3 mt-3" *ngFor="let p of petData; index as i">
+            <div class="petbox" *ngIf="i<=3">
+                <img src="{{p.petImg}}"/>
+                <p>{{p.BreedType}}  &emsp; {{p.petName}}<br>
+                    {{p.petPrice|currency :'INR'}}  </p>
+                
+            </div>
+        </div>
+    </div>
+    <a routerLink="pets" class="viewmorebtn"> View more </a>
+</div>

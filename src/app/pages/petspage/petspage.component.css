@@ -1,0 +1,29 @@
+h4{
+    color: var(--primary-color);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+a{
+   margin-top: 17px;
+}
+
+button:hover{
+    background-color: var(--primary-color);
+    color: aliceblue;
+}
+a:hover{
+    background-color: var(--primary-color);
+    color: aliceblue;
+}
+
+input.ng-touched .ng-invalid{
+    border: 1px solid red;
+}
+span{
+    font-size: smaller;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}

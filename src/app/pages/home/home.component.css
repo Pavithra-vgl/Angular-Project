@@ -1,0 +1,71 @@
+.banner{
+    background-image: url('../../../assets/backg.jpg');
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+}
+.content{
+    color: aliceblue;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    padding: 150px;
+   padding-top: 250px;
+   padding-left: 40px;
+   position: absolute;
+}
+.content button{
+    text-decoration: none;
+    border-radius: 15px;
+    border: 10px;
+    padding: 5px;
+}
+.content button:hover{
+    background-color: var(--primary-color);
+    color: aliceblue;
+}
+.stepbox{
+background-color: black;
+padding: 10px 10px;
+border-radius: 5px;
+text-align: center;
+}
+.stepbox h3{
+    color: var(--primary-color);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+.stepbox p{
+    color: aliceblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h3{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.petbox{
+    padding: 10px 5px;
+}
+.petbox img{
+    width: 200px;
+    height: 120px;
+
+}
+p{
+    color: var(--primary-color);
+font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.petbox{
+    margin-left: 45px;
+}
+.viewmorebtn{
+    text-decoration: none;
+    padding: 10px 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    float: right;
+    margin-right: 50px;
+}
+.viewmorebtn:hover{
+    background-color: var(--primary-color);
+    color: aliceblue;
+}

@@ -1,0 +1,28 @@
+.petbox{
+    padding: 10px 5px;
+}
+.petbox img{
+    width: 200px;
+    height: 120px;
+
+}
+p{
+    color: var(--primary-color);
+font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.petbox{
+    margin-left: 45px;
+}
+
+.buybtn{
+    text-decoration: none;
+    color: black;
+    padding: 8px;
+    border-radius: 5px;
+   
+}
+.buybtn:hover{
+    background-color: var(--primary-color);
+    color: aliceblue;
+
+}

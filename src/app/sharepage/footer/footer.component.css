@@ -1,0 +1,31 @@
+.footer{
+    overflow: hidden;
+    background-color: black;
+    padding: 20px 10px;
+    position: sticky;
+    top: 100%;
+}
+h2{
+    color: aliceblue;
+    font-size: 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+P{
+    color: aliceblue;
+    font-size: 16px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+a{
+    color: aliceblue;
+    text-decoration: none;
+    padding: 0px 5px;
+    font-size: 16px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+a:hover{
+    color: var(--primary-color);
+}
+i{
+    padding: 5px;
+}

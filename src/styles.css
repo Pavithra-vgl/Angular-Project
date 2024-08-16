@@ -1,0 +1,14 @@
+/* You can add global styles to this file, and also import other style files */
+*
+{
+    padding: 0%;
+    margin: 0%;
+}
+:root{
+    --primary-color:rgb(165, 86, 240);
+    --secondary-color: rgb(79, 77, 77);
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+}
